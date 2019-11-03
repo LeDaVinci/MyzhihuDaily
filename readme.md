@@ -6,4 +6,4 @@
 ### 自动化配置
 | 仓库 | 构建 | 测试覆盖率 |
 | --- | --- | --- |
-| master | [![Build Status](https://travis-ci.org/LeDaVinci/MyzhihuDaily.svg?branch=master)](https://travis-ci.org/LeDaVinci/MyzhihuDaily)| 未部署 |
+| master | [![Build Status](https://travis-ci.org/LeDaVinci/MyzhihuDaily.svg?branch=master)](https://travis-ci.org/LeDaVinci/MyzhihuDaily)| [![codecov](https://codecov.io/gh/LeDaVinci/MyzhihuDaily/branch/master/graph/badge.svg)](https://codecov.io/gh/LeDaVinci/MyzhihuDaily) |
