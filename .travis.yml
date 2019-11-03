@@ -54,6 +54,7 @@ before_script:
   #执行代码规范扫描
 #  - ./gradlew lint
   #执行测试脚本
+  - chmod +x gradlew
   - ./gradlew test
 #  - ./gradlew connectedAndroidTest
 #  - ./gradlew jacocoTestReport
