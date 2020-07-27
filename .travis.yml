@@ -8,7 +8,7 @@ jdk: oraclejdk8          #jdk版本
 sudo: required           #权限要求
 env:                 #环境变量
 global:
-  - ANDROID_BUILD_TOOLS=29.0.2
+  - ANDROID_BUILD_TOOLS=29.0.1
   - ADB_INSTALL_TIMEOUT=5 # minutes
 android:             #Android 环境要求
 components:
@@ -63,7 +63,7 @@ script:
   - ./gradlew assembleRelease
 after_success:
   - bash <(curl -s https://codecov.io/bash)
-after_script:
-  #发布蒲公英
-  - set -e
-  - $TRAVIS_BUILD_DIR/pgyer_upload.sh "${TRAVIS_BUILD_DIR}/app/build/outputs/apk/release/app-release.apk" 1ffafb3680dc6131e41428163082c76a
+#after_script:
+#  #发布蒲公英
+#  - set -e
+#  - $TRAVIS_BUILD_DIR/pgyer_upload.sh "${TRAVIS_BUILD_DIR}/app/build/outputs/apk/release/app-release.apk" 1ffafb3680dc6131e41428163082c76a
